@@ -1,7 +1,8 @@
 module.exports = {
 	env: {
 		es6: true,
-		node: true
+		node: true,
+		mocha: true,
 	},
 	extends: 'airbnb-base',
 	globals: {
@@ -12,7 +13,9 @@ module.exports = {
 		ecmaVersion: 2018,
 		sourceType: 'module'
 	},
+	plugins: ['mocha'],
 	rules: {
 		'class-methods-use-this': 'off',
+		'no-unused-expressions': 'off',
 	}
 };
