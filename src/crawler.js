@@ -1,6 +1,6 @@
 // main crawler
 
-const request = require('request-promise');
+import request from 'request-promise';
 
 class Crawler {
   constructor(extraSettings = {}) {
@@ -21,4 +21,4 @@ class Crawler {
   }
 }
 
-module.exports = Crawler;
+export default Crawler;
